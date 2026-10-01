@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Peyek Enak</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- File CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Hero -->
+    <header class="hero-header">
+        <div class="container">
+            <h1>Selamat Datang di Web Peyek Enak</h1>
+            <p>Ini adalah halaman Web Peyek Enak.</p>
+        </div>
+    </header>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#profile">Profile</a>
+            <a href="#formdata">Form</a>
+        </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container">
+
+        <!-- Profile -->
+        <section id="profile" class="card-section">
+            <h2>Profile</h2>
+            <div class="profile-content">
+                <p>
+                    Ini adalah bagian profil dari Web Peyek Enak.
+                    Kami menyediakan peyek yang enak dan renyah.
+                </p>
+                <div class="img-wrapper">
+                    <img 
+                        src="Peyek Enak.jpeg" 
+                        alt="Peyek yang renyah dan siap disajikan" 
+                        width="700"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Data Pelanggan -->
+        <section id="formdata" class="card-section">
+            <h2>Form Data Pelanggan</h2>
+
+            <form action="#" method="post" class="custom-form">
+
+                <div class="form-group">
+                    <label for="nama">Masukkan nama anda</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama lengkap..." required>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Jenis Kelamin</legend>
+                    <div class="radio-group">
+                        <label for="pria" class="radio-label">
+                            <input type="radio" name="jenis_kelamin" id="pria" value="pria" required>
+                            <span>Pria</span>
+                        </label>
+                        <label for="wanita" class="radio-label">
+                            <input type="radio" name="jenis_kelamin" id="wanita" value="wanita">
+                            <span>Wanita</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan atau catatan di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Web Peyek Enak. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
